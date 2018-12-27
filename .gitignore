@@ -10,6 +10,7 @@ bundle.js
 bundle.map.js
 
 config/master.key
+/config/keys.js
 
 ### OSX ###
 
