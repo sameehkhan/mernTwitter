@@ -15,7 +15,9 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => res.send("Hello World"));
+app.use(passport.initialize());
+
+// app.get("/", (req, res) => res.send("Hello World"));
 app.use("/api/users", users);
 app.use("/api/tweets", tweets);
 
