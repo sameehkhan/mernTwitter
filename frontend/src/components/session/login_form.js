@@ -15,7 +15,6 @@ class LoginForm extends React.Component {
         this.renderErrors = this.renderErrors.bind(this);
     }
 
-    // Once the user has been authenticated, redirect to the Tweets page
     componentWillReceiveProps(nextProps) {
         if (nextProps.currentUser === true) {
             this.props.history.push('/tweets');
@@ -25,7 +24,6 @@ class LoginForm extends React.Component {
         this.setState({ errors: nextProps.errors })
     }
 
-    // Handle field updates (called in the render method)
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
