@@ -5,7 +5,8 @@ const User = require('../../models/User');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys');
 const passport = require('passport');
-
+const validateRegisterInput = require('../../validation/register');
+const validateLoginInput = require('../../validation/login');
 
 // router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
 //   res.json({ msg: 'Success' });
