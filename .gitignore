@@ -11,6 +11,7 @@ bundle.map.js
 /frontend/node_modules
 config/master.key
 /config/keys.js
+/config/keys_dev.js
 
 ### OSX ###
 
